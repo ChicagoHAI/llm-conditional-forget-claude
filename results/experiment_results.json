@@ -1,0 +1,1202 @@
+[
+  {
+    "scenario_id": 1,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Bishops move diagonally. c1 to h6 is a diagonal path.",
+    "prompt": "A white bishop is on c1. A black pawn is on h6.\n\nIn standard chess, can the bishop on c1 capture the pawn on h6 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, the bishop on c1 cannot capture the pawn on h6 in one move. Bishops move diagonally, and the square h6 is not on the same diagonal as c1.",
+    "response": "No, the bishop on c1 cannot capture the pawn on h6 in one move. Bishops move diagonally, and the square h6 is not on the same diagonal as c1.",
+    "tokens": {
+      "input": 78,
+      "output": 39,
+      "total": 117
+    },
+    "cost": 0.0019500000000000001,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 1,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "With modified rules, bishops move in straight lines only. c1 to h6 requires diagonal movement.",
+    "prompt": "MODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on c1. A black pawn is on h6.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on c1 capture the pawn on h6 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the bishop on c1 can only move horizontally or vertically, like a rook. It cannot reach h6 in one move because it would require moving both horizontally and vertically, which is not possible in a single move under these rules.",
+    "response": "No. \n\nWith the modified rules, the bishop on c1 can only move horizontally or vertically, like a rook. It cannot reach h6 in one move because it would require moving both horizontally and vertically, which is not possible in a single move under these rules.",
+    "tokens": {
+      "input": 131,
+      "output": 54,
+      "total": 185
+    },
+    "cost": 0.0029300000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 1,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "With modified rules, bishops move in straight lines only. c1 to h6 requires diagonal movement.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on c1. A black pawn is on h6.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on c1 capture the pawn on h6 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the bishop on c1 can only move horizontally or vertically, like a rook. It cannot move diagonally. Therefore, it cannot reach h6 in one move to capture the pawn.",
+    "response": "No. \n\nWith the modified rules, the bishop on c1 can only move horizontally or vertically, like a rook. It cannot move diagonally. Therefore, it cannot reach h6 in one move to capture the pawn.",
+    "tokens": {
+      "input": 161,
+      "output": 45,
+      "total": 206
+    },
+    "cost": 0.00296,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 2,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "Bishops move diagonally, not vertically. d4 to d8 is a vertical line.",
+    "prompt": "A white bishop is on d4. A black knight is on d8.\n\nIn standard chess, can the bishop on d4 capture the knight on d8 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. A bishop moves diagonally, and the square d8 is not on the same diagonal as d4. Therefore, the bishop on d4 cannot capture the knight on d8 in one move.",
+    "response": "No. A bishop moves diagonally, and the square d8 is not on the same diagonal as d4. Therefore, the bishop on d4 cannot capture the knight on d8 in one move.",
+    "tokens": {
+      "input": 78,
+      "output": 41,
+      "total": 119
+    },
+    "cost": 0.00201,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 2,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "yes",
+    "expected_explanation": "With modified rules, bishops move vertically. d4 to d8 is a clear vertical path.",
+    "prompt": "MODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on d4. A black knight is on d8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on d4 capture the knight on d8 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the bishop on d4 can move vertically like a rook. Therefore, it can move straight up the d-file to capture the knight on d8 in one move.",
+    "response": "Yes. \n\nWith the modified rules, the bishop on d4 can move vertically like a rook. Therefore, it can move straight up the d-file to capture the knight on d8 in one move.",
+    "tokens": {
+      "input": 131,
+      "output": 41,
+      "total": 172
+    },
+    "cost": 0.00254,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 2,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "yes",
+    "expected_explanation": "With modified rules, bishops move vertically. d4 to d8 is a clear vertical path.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on d4. A black knight is on d8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on d4 capture the knight on d8 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the bishop on d4 can move vertically like a rook. Therefore, it can move straight up the d-file to capture the knight on d8 in one move.",
+    "response": "Yes. \n\nWith the modified rules, the bishop on d4 can move vertically like a rook. Therefore, it can move straight up the d-file to capture the knight on d8 in one move.",
+    "tokens": {
+      "input": 161,
+      "output": 41,
+      "total": 202
+    },
+    "cost": 0.00284,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 3,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "Bishops move diagonally, not vertically, so cannot reach e8 from e4.",
+    "prompt": "A white bishop is on e4. There is a white pawn on e6. A black rook is on e8.\n\nIn standard chess, can the bishop on e4 capture the rook on e8?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, the bishop on e4 cannot capture the rook on e8. Bishops move diagonally, and the white pawn on e6 blocks the bishop's path to e8.",
+    "response": "No, the bishop on e4 cannot capture the rook on e8. Bishops move diagonally, and the white pawn on e6 blocks the bishop's path to e8.",
+    "tokens": {
+      "input": 84,
+      "output": 37,
+      "total": 121
+    },
+    "cost": 0.0019500000000000001,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 3,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "Even with modified rules allowing vertical movement, the white pawn on e6 blocks the path.",
+    "prompt": "MODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on e4. There is a white pawn on e6. A black rook is on e8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on e4 capture the rook on e8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the bishop moves like a rook, meaning it can only move in straight lines horizontally or vertically. The white bishop on e4 cannot capture the black rook on e8 because the white pawn on e6 blocks its path.",
+    "response": "No. \n\nWith the modified rules, the bishop moves like a rook, meaning it can only move in straight lines horizontally or vertically. The white bishop on e4 cannot capture the black rook on e8 because the white pawn on e6 blocks its path.",
+    "tokens": {
+      "input": 137,
+      "output": 52,
+      "total": 189
+    },
+    "cost": 0.0029300000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 3,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "Even with modified rules allowing vertical movement, the white pawn on e6 blocks the path.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on e4. There is a white pawn on e6. A black rook is on e8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on e4 capture the rook on e8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the bishop moves like a rook, meaning it can move vertically or horizontally. The bishop on e4 can move vertically up the e-file. However, it is blocked by the white pawn on e6 and cannot move past it. Therefore, the bishop cannot reach e8 to capture the black rook.",
+    "response": "Yes. \n\nWith the modified rules, the bishop moves like a rook, meaning it can move vertically or horizontally. The bishop on e4 can move vertically up the e-file. However, it is blocked by the white pawn on e6 and cannot move past it. Therefore, the bishop cannot reach e8 to capture the black rook.",
+    "tokens": {
+      "input": 167,
+      "output": 68,
+      "total": 235
+    },
+    "cost": 0.00371,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 4,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Knights move in an L-shape. e4 to f6 is a valid knight move.",
+    "prompt": "A white knight is on e4. A black pawn is on f6.\n\nIn standard chess, can the knight on e4 capture the pawn on f6 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes,",
+    "full_response": "Yes, the knight on e4 can capture the pawn on f6 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From e4, the knight can move to f6, capturing the pawn.",
+    "response": "Yes, the knight on e4 can capture the pawn on f6 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From e4, the knight can move to f6, capturing the pawn.",
+    "tokens": {
+      "input": 78,
+      "output": 65,
+      "total": 143
+    },
+    "cost": 0.0027300000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 4,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "e4 to f6 is not a diagonal move, so the knight cannot reach it.",
+    "prompt": "MODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on e4. A black pawn is on f6.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e4 capture the pawn on f6 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on e4 can move diagonally any number of squares. The square f6 is reachable by moving diagonally from e4 to f6, so the knight can capture the pawn on f6 in one move.",
+    "response": "Yes. \n\nWith the modified rules, the knight on e4 can move diagonally any number of squares. The square f6 is reachable by moving diagonally from e4 to f6, so the knight can capture the pawn on f6 in one move.",
+    "tokens": {
+      "input": 132,
+      "output": 53,
+      "total": 185
+    },
+    "cost": 0.0029100000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 4,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "e4 to f6 is not a diagonal move, so the knight cannot reach it.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on e4. A black pawn is on f6.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e4 capture the pawn on f6 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on e4 moves like a bishop, meaning it can move diagonally any number of squares. The pawn on f6 is on a diagonal path from e4, so the knight can capture it in one move.",
+    "response": "Yes. \n\nWith the modified rules, the knight on e4 moves like a bishop, meaning it can move diagonally any number of squares. The pawn on f6 is on a diagonal path from e4, so the knight can capture it in one move.",
+    "tokens": {
+      "input": 162,
+      "output": 53,
+      "total": 215
+    },
+    "cost": 0.00321,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 5,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "c3 to f6 is not a valid L-shaped knight move.",
+    "prompt": "A white knight is on c3. A black bishop is on f6.\n\nIn standard chess, can the knight on c3 capture the bishop on f6 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, a knight on c3 cannot capture a bishop on f6 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From c3, the knight can move to a maximum of eight possible squares: a2, a4, b1, b5, d1, d5, e2, and e4. None of these squares is f6, so the knight cannot capture the bishop on f6 in one move.",
+    "response": "No, a knight on c3 cannot capture a bishop on f6 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From c3, the knight can move to a maximum of eight possible squares: a2, a4, b1, b5, d1, d5, e2, and e4. None of these squares is f6, so the knight cannot capture the bishop on f6 in one move.",
+    "tokens": {
+      "input": 78,
+      "output": 112,
+      "total": 190
+    },
+    "cost": 0.0041400000000000005,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 5,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "yes",
+    "expected_explanation": "c3 to f6 is a diagonal path, so the knight can capture.",
+    "prompt": "MODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on c3. A black bishop is on f6.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on c3 capture the bishop on f6 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on c3 can move diagonally any number of squares, just like a bishop. The square f6 is on the same diagonal as c3 (the a1-h8 diagonal), so the knight can move from c3 to f6 in one move and capture the bishop.",
+    "response": "Yes. \n\nWith the modified rules, the knight on c3 can move diagonally any number of squares, just like a bishop. The square f6 is on the same diagonal as c3 (the a1-h8 diagonal), so the knight can move from c3 to f6 in one move and capture the bishop.",
+    "tokens": {
+      "input": 132,
+      "output": 66,
+      "total": 198
+    },
+    "cost": 0.0033,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 5,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "yes",
+    "expected_explanation": "c3 to f6 is a diagonal path, so the knight can capture.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on c3. A black bishop is on f6.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on c3 capture the bishop on f6 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on c3 moves like a bishop, meaning it can move diagonally any number of squares. The square f6 is on the same diagonal as c3, so the knight can move to f6 and capture the bishop in one move.",
+    "response": "Yes. \n\nWith the modified rules, the knight on c3 moves like a bishop, meaning it can move diagonally any number of squares. The square f6 is on the same diagonal as c3, so the knight can move to f6 and capture the bishop in one move.",
+    "tokens": {
+      "input": 162,
+      "output": 58,
+      "total": 220
+    },
+    "cost": 0.00336,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 6,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Knights jump over pieces. b1 to d3 is not blocked by the pawn on c2.",
+    "prompt": "A white knight is on b1. There is a white pawn on c2. A black queen is on d3.\n\nIn standard chess, can the knight on b1 capture the queen on d3 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, the knight on b1 cannot capture the queen on d3 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From b1, the knight can move to a3, c3, d2, or d1, but not to d3.",
+    "response": "No, the knight on b1 cannot capture the queen on d3 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From b1, the knight can move to a3, c3, d2, or d1, but not to d3.",
+    "tokens": {
+      "input": 87,
+      "output": 77,
+      "total": 164
+    },
+    "cost": 0.00318,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 6,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "b1 to d3 is diagonal, but c2 blocks the path. Bishops cannot jump.",
+    "prompt": "MODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on b1. There is a white pawn on c2. A black queen is on d3.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on b1 capture the queen on d3 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the knight moves diagonally like a bishop. The white knight on b1 would need to move to d3 to capture the black queen. However, the white pawn on c2 blocks the diagonal path from b1 to d3, preventing the knight from reaching d3 in one move.",
+    "response": "No. \n\nWith the modified rules, the knight moves diagonally like a bishop. The white knight on b1 would need to move to d3 to capture the black queen. However, the white pawn on c2 blocks the diagonal path from b1 to d3, preventing the knight from reaching d3 in one move.",
+    "tokens": {
+      "input": 141,
+      "output": 66,
+      "total": 207
+    },
+    "cost": 0.00339,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 6,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "b1 to d3 is diagonal, but c2 blocks the path. Bishops cannot jump.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on b1. There is a white pawn on c2. A black queen is on d3.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on b1 capture the queen on d3 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight moves diagonally any number of squares. From b1, the knight can move to d3 diagonally, capturing the black queen.",
+    "response": "Yes. \n\nWith the modified rules, the knight moves diagonally any number of squares. From b1, the knight can move to d3 diagonally, capturing the black queen.",
+    "tokens": {
+      "input": 171,
+      "output": 37,
+      "total": 208
+    },
+    "cost": 0.0028200000000000005,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 7,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Pawns capture diagonally forward. e4 can capture d5.",
+    "prompt": "A white pawn is on e4. A black pawn is on d5.\n\nIn standard chess, can the white pawn on e4 capture the black pawn on d5?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. In standard chess, pawns capture diagonally. The white pawn on e4 can move diagonally to d5 to capture the black pawn.",
+    "response": "Yes. In standard chess, pawns capture diagonally. The white pawn on e4 can move diagonally to d5 to capture the black pawn.",
+    "tokens": {
+      "input": 77,
+      "output": 31,
+      "total": 108
+    },
+    "cost": 0.0017000000000000001,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 7,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "Modified rule explicitly prohibits pawn captures.",
+    "prompt": "MODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on e4. A black pawn is on d5.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e4 capture the black pawn on d5?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rule that pawns cannot capture pieces, the white pawn on e4 cannot capture the black pawn on d5. Pawns can only move forward and cannot capture diagonally under these rules.",
+    "response": "No. \n\nWith the modified rule that pawns cannot capture pieces, the white pawn on e4 cannot capture the black pawn on d5. Pawns can only move forward and cannot capture diagonally under these rules.",
+    "tokens": {
+      "input": 115,
+      "output": 44,
+      "total": 159
+    },
+    "cost": 0.00247,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 7,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "Modified rule explicitly prohibits pawn captures.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on e4. A black pawn is on d5.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e4 capture the black pawn on d5?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. Under the modified rules, pawns can only move forward and cannot capture pieces. Therefore, the white pawn on e4 cannot capture the black pawn on d5.",
+    "response": "No. Under the modified rules, pawns can only move forward and cannot capture pieces. Therefore, the white pawn on e4 cannot capture the black pawn on d5.",
+    "tokens": {
+      "input": 145,
+      "output": 35,
+      "total": 180
+    },
+    "cost": 0.0025,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 8,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Pawns can move two squares forward from their starting position.",
+    "prompt": "A white pawn is on e2. The square e3 is empty. The square e4 is empty.\n\nIn standard chess, can the white pawn on e2 move to e4 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. A pawn on its starting square can move forward two squares if both squares in front of it are unoccupied. In this case, the white pawn on e2 can move to e4 because both e3 and e4 are empty.",
+    "response": "Yes. A pawn on its starting square can move forward two squares if both squares in front of it are unoccupied. In this case, the white pawn on e2 can move to e4 because both e3 and e4 are empty.",
+    "tokens": {
+      "input": 83,
+      "output": 49,
+      "total": 132
+    },
+    "cost": 0.0023,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 8,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "yes",
+    "expected_explanation": "The modified rule only affects capturing, not normal movement.",
+    "prompt": "MODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on e2. The square e3 is empty. The square e4 is empty.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e2 move to e4 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nUnder the modified rules, the white pawn on e2 can move to e4 in one move because it is its initial move, and both e3 and e4 are empty. The pawn's inability to capture does not affect its ability to move two squares forward on its first move.",
+    "response": "Yes. \n\nUnder the modified rules, the white pawn on e2 can move to e4 in one move because it is its initial move, and both e3 and e4 are empty. The pawn's inability to capture does not affect its ability to move two squares forward on its first move.",
+    "tokens": {
+      "input": 121,
+      "output": 60,
+      "total": 181
+    },
+    "cost": 0.00301,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 8,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "yes",
+    "expected_explanation": "The modified rule only affects capturing, not normal movement.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on e2. The square e3 is empty. The square e4 is empty.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e2 move to e4 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. Under the modified rules, the white pawn on e2 can move to e4 in one move because the squares e3 and e4 are empty, and the pawn's initial two-square advance is not a capture.",
+    "response": "Yes. Under the modified rules, the white pawn on e2 can move to e4 in one move because the squares e3 and e4 are empty, and the pawn's initial two-square advance is not a capture.",
+    "tokens": {
+      "input": 151,
+      "output": 45,
+      "total": 196
+    },
+    "cost": 0.00286,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 9,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Pawns attack diagonally. f6 attacks e7.",
+    "prompt": "A white pawn is on f6. A black king is on e7. A black rook is on g7.\n\nIn standard chess, can the white pawn on f6 give check to the black king on e7?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, a white pawn on f6 cannot give check to the black king on e7. Pawns attack diagonally, and from f6, the white pawn can only attack the squares e7 and g7. However, the black king is on e7, which is indeed attacked by the pawn, but the black rook on g7 is not relevant to the pawn's ability to give check. Therefore, the pawn does give check to the king on e7.",
+    "response": "No, a white pawn on f6 cannot give check to the black king on e7. Pawns attack diagonally, and from f6, the white pawn can only attack the squares e7 and g7. However, the black king is on e7, which is indeed attacked by the pawn, but the black rook on g7 is not relevant to the pawn's ability to give check. Therefore, the pawn does give check to the king on e7.",
+    "tokens": {
+      "input": 87,
+      "output": 95,
+      "total": 182
+    },
+    "cost": 0.00372,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 9,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "Pawns cannot capture, so they cannot threaten (check) the king.",
+    "prompt": "MODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on f6. A black king is on e7. A black rook is on g7.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on f6 give check to the black king on e7?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nIn the modified rules where pawns cannot capture pieces, the white pawn on f6 cannot move to e7 to give check to the black king. Pawns can only move forward and cannot capture, so the pawn on f6 cannot threaten the black king on e7.",
+    "response": "No. \n\nIn the modified rules where pawns cannot capture pieces, the white pawn on f6 cannot move to e7 to give check to the black king. Pawns can only move forward and cannot capture, so the pawn on f6 cannot threaten the black king on e7.",
+    "tokens": {
+      "input": 125,
+      "output": 58,
+      "total": 183
+    },
+    "cost": 0.00299,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 9,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "Pawns cannot capture, so they cannot threaten (check) the king.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nA white pawn is on f6. A black king is on e7. A black rook is on g7.\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on f6 give check to the black king on e7?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nIn the modified rules, the pawn on f6 cannot capture any pieces, including the black king on e7. Since the pawn can only move forward to f7 and cannot capture, it cannot give check to the black king on e7.",
+    "response": "No. \n\nIn the modified rules, the pawn on f6 cannot capture any pieces, including the black king on e7. Since the pawn can only move forward to f7 and cannot capture, it cannot give check to the black king on e7.",
+    "tokens": {
+      "input": 155,
+      "output": 52,
+      "total": 207
+    },
+    "cost": 0.00311,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 10,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Rooks move vertically. a1 to a8 is a clear vertical path.",
+    "prompt": "A white rook is on a1. A black pawn is on a8.\n\nIn standard chess, can the rook on a1 capture the pawn on a8 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. A rook can move any number of squares vertically or horizontally in a straight line. Since the black pawn is on the same file (a-file) as the white rook, the rook can move from a1 to a8 in one move and capture the pawn.",
+    "response": "Yes. A rook can move any number of squares vertically or horizontally in a straight line. Since the black pawn is on the same file (a-file) as the white rook, the rook can move from a1 to a8 in one move and capture the pawn.",
+    "tokens": {
+      "input": 78,
+      "output": 54,
+      "total": 132
+    },
+    "cost": 0.0024000000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 10,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot move vertically.",
+    "prompt": "MODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on a1. A black pawn is on a8.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 capture the pawn on a8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on a1 is on a dark square, while the black pawn on a8 is on a light square. Since the rook can only move diagonally and thus stay on the same color square, it cannot reach a8 to capture the pawn.",
+    "response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on a1 is on a dark square, while the black pawn on a8 is on a light square. Since the rook can only move diagonally and thus stay on the same color square, it cannot reach a8 to capture the pawn.",
+    "tokens": {
+      "input": 125,
+      "output": 69,
+      "total": 194
+    },
+    "cost": 0.00332,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 10,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot move vertically.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on a1. A black pawn is on a8.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 capture the pawn on a8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the rook moves diagonally like a bishop. From a1, the rook can move diagonally to b2, c3, d4, e5, f6, g7, and finally to a8, capturing the pawn.",
+    "response": "Yes. \n\nWith the modified rules, the rook moves diagonally like a bishop. From a1, the rook can move diagonally to b2, c3, d4, e5, f6, g7, and finally to a8, capturing the pawn.",
+    "tokens": {
+      "input": 155,
+      "output": 56,
+      "total": 211
+    },
+    "cost": 0.0032300000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 11,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "d4 to g7 is diagonal. Rooks move in straight lines only.",
+    "prompt": "A white rook is on d4. A black knight is on g7.\n\nIn standard chess, can the rook on d4 capture the knight on g7 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, the rook on d4 cannot capture the knight on g7 in one move. Rooks move in straight lines either horizontally or vertically, and the knight on g7 is not on the same rank, file, or diagonal as the rook on d4.",
+    "response": "No, the rook on d4 cannot capture the knight on g7 in one move. Rooks move in straight lines either horizontally or vertically, and the knight on g7 is not on the same rank, file, or diagonal as the rook on d4.",
+    "tokens": {
+      "input": 78,
+      "output": 53,
+      "total": 131
+    },
+    "cost": 0.00237,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 11,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "modified",
+    "expected_answer": "yes",
+    "expected_explanation": "d4 to g7 is diagonal. Modified rooks can move diagonally.",
+    "prompt": "MODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on d4. A black knight is on g7.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d4 capture the knight on g7?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the rook on d4 moves diagonally like a bishop. It can move to g7 by traveling along the diagonal d4-e5-f6-g7, capturing the knight.",
+    "response": "Yes. \n\nWith the modified rules, the rook on d4 moves diagonally like a bishop. It can move to g7 by traveling along the diagonal d4-e5-f6-g7, capturing the knight.",
+    "tokens": {
+      "input": 125,
+      "output": 44,
+      "total": 169
+    },
+    "cost": 0.0025700000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 11,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "condition": "metacognitive",
+    "expected_answer": "yes",
+    "expected_explanation": "d4 to g7 is diagonal. Modified rooks can move diagonally.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on d4. A black knight is on g7.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d4 capture the knight on g7?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook on d4 moves diagonally like a bishop. The square g7 is not on a diagonal from d4, so the rook cannot move to g7 to capture the knight.",
+    "response": "No. \n\nWith the modified rules, the rook on d4 moves diagonally like a bishop. The square g7 is not on a diagonal from d4, so the rook cannot move to g7 to capture the knight.",
+    "tokens": {
+      "input": 155,
+      "output": 46,
+      "total": 201
+    },
+    "cost": 0.0029300000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 12,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "The white pawn on h3 blocks the vertical path.",
+    "prompt": "A white rook is on h1. There is a white pawn on h3. A black queen is on h8.\n\nIn standard chess, can the rook on h1 capture the queen on h8?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. The white rook on h1 cannot capture the black queen on h8 because the white pawn on h3 is blocking the rook's path along the h-file.",
+    "response": "No. The white rook on h1 cannot capture the black queen on h8 because the white pawn on h3 is blocking the rook's path along the h-file.",
+    "tokens": {
+      "input": 84,
+      "output": 34,
+      "total": 118
+    },
+    "cost": 0.00186,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 12,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "h1 to h8 is vertical, not diagonal. Modified rooks cannot make this move.",
+    "prompt": "MODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on h1. There is a white pawn on h3. A black queen is on h8.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on h1 capture the queen on h8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook on h1 moves diagonally like a bishop. The white pawn on h3 blocks the diagonal path from h1 to h8, preventing the rook from capturing the queen.",
+    "response": "No. \n\nWith the modified rules, the rook on h1 moves diagonally like a bishop. The white pawn on h3 blocks the diagonal path from h1 to h8, preventing the rook from capturing the queen.",
+    "tokens": {
+      "input": 134,
+      "output": 45,
+      "total": 179
+    },
+    "cost": 0.00269,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 12,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "h1 to h8 is vertical, not diagonal. Modified rooks cannot make this move.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on h1. There is a white pawn on h3. A black queen is on h8.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on h1 capture the queen on h8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. From h1, the rook can only move along the diagonal paths: g2, f3, e4, d5, c6, b7, and a8. The black queen on h8 is not on any of these diagonal paths, so the rook cannot capture the queen.",
+    "response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. From h1, the rook can only move along the diagonal paths: g2, f3, e4, d5, c6, b7, and a8. The black queen on h8 is not on any of these diagonal paths, so the rook cannot capture the queen.",
+    "tokens": {
+      "input": 164,
+      "output": 76,
+      "total": 240
+    },
+    "cost": 0.00392,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 13,
+    "category": "bishop_movement",
+    "difficulty": "hard",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "b2 to h8 is a clear diagonal path.",
+    "prompt": "A white bishop is on b2. A black bishop is on h8. Are there any pieces between them on the diagonal?\n\nIn standard chess, can the bishop on b2 capture the bishop on h8 in one move if the diagonal is clear?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. The white bishop on b2 and the black bishop on h8 are on the same diagonal (a1-h8 diagonal). If there are no pieces between them on this diagonal, the white bishop can capture the black bishop on h8 in one move.",
+    "response": "Yes. The white bishop on b2 and the black bishop on h8 are on the same diagonal (a1-h8 diagonal). If there are no pieces between them on this diagonal, the white bishop can capture the black bishop on h8 in one move.",
+    "tokens": {
+      "input": 93,
+      "output": 53,
+      "total": 146
+    },
+    "cost": 0.00252,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 13,
+    "category": "bishop_movement",
+    "difficulty": "hard",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "b2 to h8 requires diagonal movement, which modified bishops cannot do.",
+    "prompt": "MODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on b2. A black bishop is on h8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on b2 capture the bishop on h8 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the bishop on b2 can only move horizontally or vertically. It cannot reach h8 in one move because it would require moving diagonally, which is not allowed under these rules.",
+    "response": "No. \n\nWith the modified rules, the bishop on b2 can only move horizontally or vertically. It cannot reach h8 in one move because it would require moving diagonally, which is not allowed under these rules.",
+    "tokens": {
+      "input": 131,
+      "output": 44,
+      "total": 175
+    },
+    "cost": 0.0026300000000000004,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 13,
+    "category": "bishop_movement",
+    "difficulty": "hard",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "b2 to h8 requires diagonal movement, which modified bishops cannot do.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nA white bishop is on b2. A black bishop is on h8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on b2 capture the bishop on h8 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nUnder the modified rules, bishops move like rooks, meaning they can only move horizontally or vertically. The white bishop on b2 can only move along the b-file or the 2nd rank, and the black bishop on h8 can only move along the h-file or the 8th rank. Therefore, the white bishop cannot capture the black bishop in one move.",
+    "response": "No. \n\nUnder the modified rules, bishops move like rooks, meaning they can only move horizontally or vertically. The white bishop on b2 can only move along the b-file or the 2nd rank, and the black bishop on h8 can only move along the h-file or the 8th rank. Therefore, the white bishop cannot capture the black bishop in one move.",
+    "tokens": {
+      "input": 161,
+      "output": 78,
+      "total": 239
+    },
+    "cost": 0.00395,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 14,
+    "category": "knight_movement",
+    "difficulty": "hard",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "g1 to e2 is a valid L-shaped knight move.",
+    "prompt": "A white knight is on g1. A black pawn is on e2.\n\nIn standard chess, can the knight on g1 capture the pawn on e2 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no,",
+    "full_response": "No, a knight on g1 cannot capture a pawn on e2 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From g1, the knight can move to f3 or h3, but not to e2.",
+    "response": "No, a knight on g1 cannot capture a pawn on e2 in one move. Knights move in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From g1, the knight can move to f3 or h3, but not to e2.",
+    "tokens": {
+      "input": 78,
+      "output": 70,
+      "total": 148
+    },
+    "cost": 0.0028799999999999997,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 14,
+    "category": "knight_movement",
+    "difficulty": "hard",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "g1 to e2 is not a diagonal move.",
+    "prompt": "MODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on g1. A black pawn is on e2.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on g1 capture the pawn on e2 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on g1 can move diagonally any number of squares. It can move diagonally from g1 to e2 and capture the pawn in one move.",
+    "response": "Yes. \n\nWith the modified rules, the knight on g1 can move diagonally any number of squares. It can move diagonally from g1 to e2 and capture the pawn in one move.",
+    "tokens": {
+      "input": 132,
+      "output": 41,
+      "total": 173
+    },
+    "cost": 0.00255,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 14,
+    "category": "knight_movement",
+    "difficulty": "hard",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "g1 to e2 is not a diagonal move.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nA white knight is on g1. A black pawn is on e2.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on g1 capture the pawn on e2 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on g1 can move diagonally any number of squares. It can move to e2 in one move, capturing the black pawn.",
+    "response": "Yes. \n\nWith the modified rules, the knight on g1 can move diagonally any number of squares. It can move to e2 in one move, capturing the black pawn.",
+    "tokens": {
+      "input": 162,
+      "output": 37,
+      "total": 199
+    },
+    "cost": 0.0027300000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 15,
+    "category": "rook_movement",
+    "difficulty": "hard",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "Only the white rook on a1 can attack a8 (vertically). The pawn cannot.",
+    "prompt": "A white rook is on a1. A black rook is on a8. A white pawn is on d4.\n\nIn standard chess, can the rook on a1 and the pawn on d4 both attack the black rook on a8?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. The white rook on a1 can attack the black rook on a8 because they are on the same file. However, the white pawn on d4 cannot attack the black rook on a8 because pawns attack diagonally, and the black rook is not on a square that the pawn can attack.",
+    "response": "No. The white rook on a1 can attack the black rook on a8 because they are on the same file. However, the white pawn on d4 cannot attack the black rook on a8 because pawns attack diagonally, and the black rook is not on a square that the pawn can attack.",
+    "tokens": {
+      "input": 91,
+      "output": 62,
+      "total": 153
+    },
+    "cost": 0.0027700000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 15,
+    "category": "rook_movement",
+    "difficulty": "hard",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot attack vertically.",
+    "prompt": "MODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on a1. A black rook is on a8. A white pawn is on d4.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 attack the rook on a8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook on a1 moves diagonally like a bishop. It can only move along the a1-h8 diagonal or the a8-h1 diagonal. The black rook on a8 is not on either of these diagonals, so the white rook on a1 cannot attack it.",
+    "response": "No. \n\nWith the modified rules, the rook on a1 moves diagonally like a bishop. It can only move along the a1-h8 diagonal or the a8-h1 diagonal. The black rook on a8 is not on either of these diagonals, so the white rook on a1 cannot attack it.",
+    "tokens": {
+      "input": 133,
+      "output": 65,
+      "total": 198
+    },
+    "cost": 0.00328,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 15,
+    "category": "rook_movement",
+    "difficulty": "hard",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot attack vertically.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nA white rook is on a1. A black rook is on a8. A white pawn is on d4.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 attack the rook on a8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook on a1 moves diagonally like a bishop. It cannot reach a8 because a8 is not on a diagonal from a1.",
+    "response": "No. \n\nWith the modified rules, the rook on a1 moves diagonally like a bishop. It cannot reach a8 because a8 is not on a diagonal from a1.",
+    "tokens": {
+      "input": 163,
+      "output": 37,
+      "total": 200
+    },
+    "cost": 0.0027400000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 16,
+    "category": "pawn_capture",
+    "difficulty": "hard",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "En passant is a special pawn capture rule.",
+    "prompt": "White pawn on e5. Black pawn on d5 (just moved two squares). Can white pawn capture en passant?\n\nIn standard chess, can the white pawn on e5 capture the black pawn on d5 via en passant if the black pawn just moved from d7 to d5?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. The white pawn on e5 can capture the black pawn on d5 via en passant because the black pawn moved two squares forward from d7 to d5 in a single move, landing next to the white pawn. En passant is a special capture that allows a pawn to capture an opposing pawn that has moved two squares forward from its starting position, as if it had only moved one square.",
+    "response": "Yes. The white pawn on e5 can capture the black pawn on d5 via en passant because the black pawn moved two squares forward from d7 to d5 in a single move, landing next to the white pawn. En passant is a special capture that allows a pawn to capture an opposing pawn that has moved two squares forward from its starting position, as if it had only moved one square.",
+    "tokens": {
+      "input": 100,
+      "output": 80,
+      "total": 180
+    },
+    "cost": 0.0034000000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 16,
+    "category": "pawn_capture",
+    "difficulty": "hard",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "Modified rule prohibits all pawn captures, including en passant.",
+    "prompt": "MODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nWhite pawn on e5. Black pawn on d5 (just moved two squares).\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e5 capture the black pawn on d5 via en passant?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rule that pawns cannot capture pieces, the white pawn on e5 cannot capture the black pawn on d5 via en passant or any other method.",
+    "response": "No. \n\nWith the modified rule that pawns cannot capture pieces, the white pawn on e5 cannot capture the black pawn on d5 via en passant or any other method.",
+    "tokens": {
+      "input": 119,
+      "output": 36,
+      "total": 155
+    },
+    "cost": 0.0022700000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 16,
+    "category": "pawn_capture",
+    "difficulty": "hard",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "Modified rule prohibits all pawn captures, including en passant.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nWhite pawn on e5. Black pawn on d5 (just moved two squares).\n\nWith the modified rule where pawns cannot capture pieces, can the white pawn on e5 capture the black pawn on d5 via en passant?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. Under the modified rules, pawns cannot capture pieces, so the white pawn on e5 cannot capture the black pawn on d5 via en passant or any other method.",
+    "response": "No. Under the modified rules, pawns cannot capture pieces, so the white pawn on e5 cannot capture the black pawn on d5 via en passant or any other method.",
+    "tokens": {
+      "input": 149,
+      "output": 36,
+      "total": 185
+    },
+    "cost": 0.0025700000000000002,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 17,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "no",
+    "expected_explanation": "Neither c1 nor f1 have clear diagonal paths to e8.",
+    "prompt": "White bishops on c1 and f1. Black king on e8.\n\nIn standard chess, can either bishop give check to the king on e8?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. In standard chess, bishops move diagonally. The white bishops on c1 and f1 cannot move to a diagonal that attacks the black king on e8, as they are blocked by their own pawns and pieces in the initial position.",
+    "response": "No. In standard chess, bishops move diagonally. The white bishops on c1 and f1 cannot move to a diagonal that attacks the black king on e8, as they are blocked by their own pawns and pieces in the initial position.",
+    "tokens": {
+      "input": 73,
+      "output": 50,
+      "total": 123
+    },
+    "cost": 0.00223,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 17,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "Neither bishop has a clear straight line to e8.",
+    "prompt": "MODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nWhite bishops on c1 and f1. Black king on e8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can either bishop give check to the king on e8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the bishops move like rooks, meaning they can only move horizontally or vertically. The white bishops on c1 and f1 cannot move to the e-file to give check to the black king on e8.",
+    "response": "No. \n\nWith the modified rules, the bishops move like rooks, meaning they can only move horizontally or vertically. The white bishops on c1 and f1 cannot move to the e-file to give check to the black king on e8.",
+    "tokens": {
+      "input": 126,
+      "output": 50,
+      "total": 176
+    },
+    "cost": 0.0027600000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 17,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "Neither bishop has a clear straight line to e8.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).\n\nWhite bishops on c1 and f1. Black king on e8.\n\nWith the modified rule where bishops move like rooks (only straight lines, not diagonally), can either bishop give check to the king on e8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the white bishops move like rooks, meaning they can move horizontally or vertically any number of squares. The bishop on f1 can move vertically up the f-file to reach f8, putting the black king on e8 in check.",
+    "response": "Yes. \n\nWith the modified rules, the white bishops move like rooks, meaning they can move horizontally or vertically any number of squares. The bishop on f1 can move vertically up the f-file to reach f8, putting the black king on e8 in check.",
+    "tokens": {
+      "input": 156,
+      "output": 55,
+      "total": 211
+    },
+    "cost": 0.00321,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 18,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "Rooks move vertically. d1 to d8 is a clear vertical line.",
+    "prompt": "White rook on d1. Black queen on d8. No pieces in between.\n\nIn standard chess, can the rook on d1 attack the queen on d8?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. The white rook on d1 can attack the black queen on d8 because they are on the same file (the d-file) with no pieces in between, allowing the rook to move vertically and attack the queen.",
+    "response": "Yes. The white rook on d1 can attack the black queen on d8 because they are on the same file (the d-file) with no pieces in between, allowing the rook to move vertically and attack the queen.",
+    "tokens": {
+      "input": 76,
+      "output": 45,
+      "total": 121
+    },
+    "cost": 0.00211,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 18,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "d1 to d8 is vertical, not diagonal. Modified rooks cannot move vertically.",
+    "prompt": "MODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nWhite rook on d1. Black queen on d8. No pieces in between.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d1 attack the queen on d8?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on d1 can move to squares like e2, f3, g4, h5, c2, b3, a4, etc., but it cannot move to d8 because that would require moving in a straight line, which is not allowed under the modified rules.",
+    "response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on d1 can move to squares like e2, f3, g4, h5, c2, b3, a4, etc., but it cannot move to d8 because that would require moving in a straight line, which is not allowed under the modified rules.",
+    "tokens": {
+      "input": 126,
+      "output": 77,
+      "total": 203
+    },
+    "cost": 0.0035700000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 18,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "d1 to d8 is vertical, not diagonal. Modified rooks cannot move vertically.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Rooks move like bishops (diagonally, not in straight lines).\n\nWhite rook on d1. Black queen on d8. No pieces in between.\n\nWith the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d1 attack the queen on d8?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on d1 can move to squares like c2, b3, a4, e2, f3, g4, h5, etc., but it cannot move to d8 because that would require moving in a straight line, which is not allowed under the modified rules. Therefore, the rook cannot attack the queen on d8.",
+    "response": "No. \n\nWith the modified rules, the rook moves diagonally like a bishop. The white rook on d1 can move to squares like c2, b3, a4, e2, f3, g4, h5, etc., but it cannot move to d8 because that would require moving in a straight line, which is not allowed under the modified rules. Therefore, the rook cannot attack the queen on d8.",
+    "tokens": {
+      "input": 156,
+      "output": 89,
+      "total": 245
+    },
+    "cost": 0.00423,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 19,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "2",
+    "expected_explanation": "Pawns capture diagonally forward. d4 can capture both c5 and e5.",
+    "prompt": "White pawn on d4. Black pawns on c5 and e5.\n\nIn standard chess, how many black pawns can the white pawn on d4 potentially capture?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "yes,",
+    "full_response": "Yes, the white pawn on d4 can potentially capture both black pawns on c5 and e5. In chess, pawns capture diagonally, so the white pawn on d4 can move to c5 to capture the black pawn on c5, and it can move to e5 to capture the black pawn on e5.",
+    "response": "Yes, the white pawn on d4 can potentially capture both black pawns on c5 and e5. In chess, pawns capture diagonally, so the white pawn on d4 can move to c5 to capture the black pawn on c5, and it can move to e5 to capture the black pawn on e5.",
+    "tokens": {
+      "input": 77,
+      "output": 68,
+      "total": 145
+    },
+    "cost": 0.00281,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 19,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "0",
+    "expected_explanation": "Modified pawns cannot capture any pieces.",
+    "prompt": "MODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nWhite pawn on d4. Black pawns on c5 and e5.\n\nWith the modified rule where pawns cannot capture pieces, how many black pawns can the white pawn on d4 capture?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": true,
+    "extracted_answer": "0",
+    "full_response": "0\n\nWith the modified rule where pawns cannot capture pieces, the white pawn on d4 cannot capture any black pawns. Pawns can only move forward and cannot capture pieces in this scenario.",
+    "response": "0\n\nWith the modified rule where pawns cannot capture pieces, the white pawn on d4 cannot capture any black pawns. Pawns can only move forward and cannot capture pieces in this scenario.",
+    "tokens": {
+      "input": 114,
+      "output": 40,
+      "total": 154
+    },
+    "cost": 0.00234,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 19,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "0",
+    "expected_explanation": "Modified pawns cannot capture any pieces.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Pawns can only move forward, they cannot capture pieces.\n\nWhite pawn on d4. Black pawns on c5 and e5.\n\nWith the modified rule where pawns cannot capture pieces, how many black pawns can the white pawn on d4 capture?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": true,
+    "extracted_answer": "0",
+    "full_response": "0\n\nUnder the modified rules, pawns can only move forward and cannot capture pieces. Therefore, the white pawn on d4 cannot capture any black pawns on c5 or e5.",
+    "response": "0\n\nUnder the modified rules, pawns can only move forward and cannot capture pieces. Therefore, the white pawn on d4 cannot capture any black pawns on c5 or e5.",
+    "tokens": {
+      "input": 144,
+      "output": 39,
+      "total": 183
+    },
+    "cost": 0.0026100000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 20,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "standard",
+    "expected_answer": "yes",
+    "expected_explanation": "e5 to c4 is a valid L-shaped knight move.",
+    "prompt": "White knight on e5. Black bishop on c4.\n\nIn standard chess, can the knight on e5 capture the bishop on c4 in one move?\n\nPlease answer with just 'yes' or 'no', followed by a brief explanation of your reasoning.",
+    "is_correct": false,
+    "extracted_answer": "no.",
+    "full_response": "No. A knight moves in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From e5, the knight can move to c4, but it cannot capture the bishop on c4 in one move because c4 is not a valid destination for the knight from e5.",
+    "response": "No. A knight moves in an L-shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. From e5, the knight can move to c4, but it cannot capture the bishop on c4 in one move because c4 is not a valid destination for the knight from e5.",
+    "tokens": {
+      "input": 74,
+      "output": 73,
+      "total": 147
+    },
+    "cost": 0.0029300000000000003,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 20,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "modified",
+    "expected_answer": "no",
+    "expected_explanation": "e5 to c4 is not a diagonal move.",
+    "prompt": "MODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nWhite knight on e5. Black bishop on c4.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e5 capture the bishop on c4 in one move?\n\nPlease answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rule, the knight on e5 can move diagonally any number of squares. It can move to c4 in one move, capturing the black bishop.",
+    "response": "Yes. \n\nWith the modified rule, the knight on e5 can move diagonally any number of squares. It can move to c4 in one move, capturing the black bishop.",
+    "tokens": {
+      "input": 128,
+      "output": 37,
+      "total": 165
+    },
+    "cost": 0.00239,
+    "model": "gpt-4o"
+  },
+  {
+    "scenario_id": 20,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "condition": "metacognitive",
+    "expected_answer": "no",
+    "expected_explanation": "e5 to c4 is not a diagonal move.",
+    "prompt": "IMPORTANT: Forget the standard chess rules. Only use the modified rules described below.\n\nMODIFIED CHESS RULES: Knights move like bishops (diagonally any number of squares, not in L-shapes).\n\nWhite knight on e5. Black bishop on c4.\n\nWith the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e5 capture the bishop on c4 in one move?\n\nRemember: Use ONLY the modified rules, not standard chess rules. Please answer with just 'yes' or 'no' (or a number if asking 'how many'), followed by a brief explanation using the MODIFIED rules only.",
+    "is_correct": false,
+    "extracted_answer": "yes.",
+    "full_response": "Yes. \n\nWith the modified rules, the knight on e5 moves like a bishop, meaning it can move diagonally any number of squares. The knight can move diagonally from e5 to c4 and capture the bishop in one move.",
+    "response": "Yes. \n\nWith the modified rules, the knight on e5 moves like a bishop, meaning it can move diagonally any number of squares. The knight can move diagonally from e5 to c4 and capture the bishop in one move.",
+    "tokens": {
+      "input": 158,
+      "output": 49,
+      "total": 207
+    },
+    "cost": 0.0030499999999999998,
+    "model": "gpt-4o"
+  }
+]

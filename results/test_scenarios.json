@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white bishop is on c1. A black pawn is on h6.",
+      "question": "In standard chess, can the bishop on c1 capture the pawn on h6 in one move?",
+      "answer": "yes",
+      "explanation": "Bishops move diagonally. c1 to h6 is a diagonal path."
+    },
+    "modified": {
+      "rule_change": "Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).",
+      "setup": "A white bishop is on c1. A black pawn is on h6.",
+      "question": "With the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on c1 capture the pawn on h6 in one move?",
+      "answer": "no",
+      "explanation": "With modified rules, bishops move in straight lines only. c1 to h6 requires diagonal movement."
+    }
+  },
+  {
+    "id": 2,
+    "category": "bishop_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white bishop is on d4. A black knight is on d8.",
+      "question": "In standard chess, can the bishop on d4 capture the knight on d8 in one move?",
+      "answer": "no",
+      "explanation": "Bishops move diagonally, not vertically. d4 to d8 is a vertical line."
+    },
+    "modified": {
+      "rule_change": "Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).",
+      "setup": "A white bishop is on d4. A black knight is on d8.",
+      "question": "With the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on d4 capture the knight on d8 in one move?",
+      "answer": "yes",
+      "explanation": "With modified rules, bishops move vertically. d4 to d8 is a clear vertical path."
+    }
+  },
+  {
+    "id": 3,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "A white bishop is on e4. There is a white pawn on e6. A black rook is on e8.",
+      "question": "In standard chess, can the bishop on e4 capture the rook on e8?",
+      "answer": "no",
+      "explanation": "Bishops move diagonally, not vertically, so cannot reach e8 from e4."
+    },
+    "modified": {
+      "rule_change": "Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).",
+      "setup": "A white bishop is on e4. There is a white pawn on e6. A black rook is on e8.",
+      "question": "With the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on e4 capture the rook on e8?",
+      "answer": "no",
+      "explanation": "Even with modified rules allowing vertical movement, the white pawn on e6 blocks the path."
+    }
+  },
+  {
+    "id": 4,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white knight is on e4. A black pawn is on f6.",
+      "question": "In standard chess, can the knight on e4 capture the pawn on f6 in one move?",
+      "answer": "yes",
+      "explanation": "Knights move in an L-shape. e4 to f6 is a valid knight move."
+    },
+    "modified": {
+      "rule_change": "Knights move like bishops (diagonally any number of squares, not in L-shapes).",
+      "setup": "A white knight is on e4. A black pawn is on f6.",
+      "question": "With the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e4 capture the pawn on f6 in one move?",
+      "answer": "no",
+      "explanation": "e4 to f6 is not a diagonal move, so the knight cannot reach it."
+    }
+  },
+  {
+    "id": 5,
+    "category": "knight_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white knight is on c3. A black bishop is on f6.",
+      "question": "In standard chess, can the knight on c3 capture the bishop on f6 in one move?",
+      "answer": "no",
+      "explanation": "c3 to f6 is not a valid L-shaped knight move."
+    },
+    "modified": {
+      "rule_change": "Knights move like bishops (diagonally any number of squares, not in L-shapes).",
+      "setup": "A white knight is on c3. A black bishop is on f6.",
+      "question": "With the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on c3 capture the bishop on f6 in one move?",
+      "answer": "yes",
+      "explanation": "c3 to f6 is a diagonal path, so the knight can capture."
+    }
+  },
+  {
+    "id": 6,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "A white knight is on b1. There is a white pawn on c2. A black queen is on d3.",
+      "question": "In standard chess, can the knight on b1 capture the queen on d3 in one move?",
+      "answer": "yes",
+      "explanation": "Knights jump over pieces. b1 to d3 is not blocked by the pawn on c2."
+    },
+    "modified": {
+      "rule_change": "Knights move like bishops (diagonally any number of squares, not in L-shapes).",
+      "setup": "A white knight is on b1. There is a white pawn on c2. A black queen is on d3.",
+      "question": "With the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on b1 capture the queen on d3 in one move?",
+      "answer": "no",
+      "explanation": "b1 to d3 is diagonal, but c2 blocks the path. Bishops cannot jump."
+    }
+  },
+  {
+    "id": 7,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white pawn is on e4. A black pawn is on d5.",
+      "question": "In standard chess, can the white pawn on e4 capture the black pawn on d5?",
+      "answer": "yes",
+      "explanation": "Pawns capture diagonally forward. e4 can capture d5."
+    },
+    "modified": {
+      "rule_change": "Pawns can only move forward, they cannot capture pieces.",
+      "setup": "A white pawn is on e4. A black pawn is on d5.",
+      "question": "With the modified rule where pawns cannot capture pieces, can the white pawn on e4 capture the black pawn on d5?",
+      "answer": "no",
+      "explanation": "Modified rule explicitly prohibits pawn captures."
+    }
+  },
+  {
+    "id": 8,
+    "category": "pawn_capture",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white pawn is on e2. The square e3 is empty. The square e4 is empty.",
+      "question": "In standard chess, can the white pawn on e2 move to e4 in one move?",
+      "answer": "yes",
+      "explanation": "Pawns can move two squares forward from their starting position."
+    },
+    "modified": {
+      "rule_change": "Pawns can only move forward, they cannot capture pieces.",
+      "setup": "A white pawn is on e2. The square e3 is empty. The square e4 is empty.",
+      "question": "With the modified rule where pawns cannot capture pieces, can the white pawn on e2 move to e4 in one move?",
+      "answer": "yes",
+      "explanation": "The modified rule only affects capturing, not normal movement."
+    }
+  },
+  {
+    "id": 9,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "A white pawn is on f6. A black king is on e7. A black rook is on g7.",
+      "question": "In standard chess, can the white pawn on f6 give check to the black king on e7?",
+      "answer": "yes",
+      "explanation": "Pawns attack diagonally. f6 attacks e7."
+    },
+    "modified": {
+      "rule_change": "Pawns can only move forward, they cannot capture pieces.",
+      "setup": "A white pawn is on f6. A black king is on e7. A black rook is on g7.",
+      "question": "With the modified rule where pawns cannot capture pieces, can the white pawn on f6 give check to the black king on e7?",
+      "answer": "no",
+      "explanation": "Pawns cannot capture, so they cannot threaten (check) the king."
+    }
+  },
+  {
+    "id": 10,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white rook is on a1. A black pawn is on a8.",
+      "question": "In standard chess, can the rook on a1 capture the pawn on a8 in one move?",
+      "answer": "yes",
+      "explanation": "Rooks move vertically. a1 to a8 is a clear vertical path."
+    },
+    "modified": {
+      "rule_change": "Rooks move like bishops (diagonally, not in straight lines).",
+      "setup": "A white rook is on a1. A black pawn is on a8.",
+      "question": "With the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 capture the pawn on a8?",
+      "answer": "no",
+      "explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot move vertically."
+    }
+  },
+  {
+    "id": 11,
+    "category": "rook_movement",
+    "difficulty": "easy",
+    "standard": {
+      "setup": "A white rook is on d4. A black knight is on g7.",
+      "question": "In standard chess, can the rook on d4 capture the knight on g7 in one move?",
+      "answer": "no",
+      "explanation": "d4 to g7 is diagonal. Rooks move in straight lines only."
+    },
+    "modified": {
+      "rule_change": "Rooks move like bishops (diagonally, not in straight lines).",
+      "setup": "A white rook is on d4. A black knight is on g7.",
+      "question": "With the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d4 capture the knight on g7?",
+      "answer": "yes",
+      "explanation": "d4 to g7 is diagonal. Modified rooks can move diagonally."
+    }
+  },
+  {
+    "id": 12,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "A white rook is on h1. There is a white pawn on h3. A black queen is on h8.",
+      "question": "In standard chess, can the rook on h1 capture the queen on h8?",
+      "answer": "no",
+      "explanation": "The white pawn on h3 blocks the vertical path."
+    },
+    "modified": {
+      "rule_change": "Rooks move like bishops (diagonally, not in straight lines).",
+      "setup": "A white rook is on h1. There is a white pawn on h3. A black queen is on h8.",
+      "question": "With the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on h1 capture the queen on h8?",
+      "answer": "no",
+      "explanation": "h1 to h8 is vertical, not diagonal. Modified rooks cannot make this move."
+    }
+  },
+  {
+    "id": 13,
+    "category": "bishop_movement",
+    "difficulty": "hard",
+    "standard": {
+      "setup": "A white bishop is on b2. A black bishop is on h8. Are there any pieces between them on the diagonal?",
+      "question": "In standard chess, can the bishop on b2 capture the bishop on h8 in one move if the diagonal is clear?",
+      "answer": "yes",
+      "explanation": "b2 to h8 is a clear diagonal path."
+    },
+    "modified": {
+      "rule_change": "Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).",
+      "setup": "A white bishop is on b2. A black bishop is on h8.",
+      "question": "With the modified rule where bishops move like rooks (only straight lines, not diagonally), can the bishop on b2 capture the bishop on h8 in one move?",
+      "answer": "no",
+      "explanation": "b2 to h8 requires diagonal movement, which modified bishops cannot do."
+    }
+  },
+  {
+    "id": 14,
+    "category": "knight_movement",
+    "difficulty": "hard",
+    "standard": {
+      "setup": "A white knight is on g1. A black pawn is on e2.",
+      "question": "In standard chess, can the knight on g1 capture the pawn on e2 in one move?",
+      "answer": "yes",
+      "explanation": "g1 to e2 is a valid L-shaped knight move."
+    },
+    "modified": {
+      "rule_change": "Knights move like bishops (diagonally any number of squares, not in L-shapes).",
+      "setup": "A white knight is on g1. A black pawn is on e2.",
+      "question": "With the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on g1 capture the pawn on e2 in one move?",
+      "answer": "no",
+      "explanation": "g1 to e2 is not a diagonal move."
+    }
+  },
+  {
+    "id": 15,
+    "category": "rook_movement",
+    "difficulty": "hard",
+    "standard": {
+      "setup": "A white rook is on a1. A black rook is on a8. A white pawn is on d4.",
+      "question": "In standard chess, can the rook on a1 and the pawn on d4 both attack the black rook on a8?",
+      "answer": "no",
+      "explanation": "Only the white rook on a1 can attack a8 (vertically). The pawn cannot."
+    },
+    "modified": {
+      "rule_change": "Rooks move like bishops (diagonally, not in straight lines).",
+      "setup": "A white rook is on a1. A black rook is on a8. A white pawn is on d4.",
+      "question": "With the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on a1 attack the rook on a8?",
+      "answer": "no",
+      "explanation": "a1 to a8 is vertical, not diagonal. Modified rooks cannot attack vertically."
+    }
+  },
+  {
+    "id": 16,
+    "category": "pawn_capture",
+    "difficulty": "hard",
+    "standard": {
+      "setup": "White pawn on e5. Black pawn on d5 (just moved two squares). Can white pawn capture en passant?",
+      "question": "In standard chess, can the white pawn on e5 capture the black pawn on d5 via en passant if the black pawn just moved from d7 to d5?",
+      "answer": "yes",
+      "explanation": "En passant is a special pawn capture rule."
+    },
+    "modified": {
+      "rule_change": "Pawns can only move forward, they cannot capture pieces.",
+      "setup": "White pawn on e5. Black pawn on d5 (just moved two squares).",
+      "question": "With the modified rule where pawns cannot capture pieces, can the white pawn on e5 capture the black pawn on d5 via en passant?",
+      "answer": "no",
+      "explanation": "Modified rule prohibits all pawn captures, including en passant."
+    }
+  },
+  {
+    "id": 17,
+    "category": "bishop_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "White bishops on c1 and f1. Black king on e8.",
+      "question": "In standard chess, can either bishop give check to the king on e8?",
+      "answer": "no",
+      "explanation": "Neither c1 nor f1 have clear diagonal paths to e8."
+    },
+    "modified": {
+      "rule_change": "Bishops move like rooks (only in straight lines horizontally or vertically, not diagonally).",
+      "setup": "White bishops on c1 and f1. Black king on e8.",
+      "question": "With the modified rule where bishops move like rooks (only straight lines, not diagonally), can either bishop give check to the king on e8?",
+      "answer": "no",
+      "explanation": "Neither bishop has a clear straight line to e8."
+    }
+  },
+  {
+    "id": 18,
+    "category": "rook_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "White rook on d1. Black queen on d8. No pieces in between.",
+      "question": "In standard chess, can the rook on d1 attack the queen on d8?",
+      "answer": "yes",
+      "explanation": "Rooks move vertically. d1 to d8 is a clear vertical line."
+    },
+    "modified": {
+      "rule_change": "Rooks move like bishops (diagonally, not in straight lines).",
+      "setup": "White rook on d1. Black queen on d8. No pieces in between.",
+      "question": "With the modified rule where rooks move like bishops (diagonally, not in straight lines), can the rook on d1 attack the queen on d8?",
+      "answer": "no",
+      "explanation": "d1 to d8 is vertical, not diagonal. Modified rooks cannot move vertically."
+    }
+  },
+  {
+    "id": 19,
+    "category": "pawn_capture",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "White pawn on d4. Black pawns on c5 and e5.",
+      "question": "In standard chess, how many black pawns can the white pawn on d4 potentially capture?",
+      "answer": "2",
+      "explanation": "Pawns capture diagonally forward. d4 can capture both c5 and e5."
+    },
+    "modified": {
+      "rule_change": "Pawns can only move forward, they cannot capture pieces.",
+      "setup": "White pawn on d4. Black pawns on c5 and e5.",
+      "question": "With the modified rule where pawns cannot capture pieces, how many black pawns can the white pawn on d4 capture?",
+      "answer": "0",
+      "explanation": "Modified pawns cannot capture any pieces."
+    }
+  },
+  {
+    "id": 20,
+    "category": "knight_movement",
+    "difficulty": "medium",
+    "standard": {
+      "setup": "White knight on e5. Black bishop on c4.",
+      "question": "In standard chess, can the knight on e5 capture the bishop on c4 in one move?",
+      "answer": "yes",
+      "explanation": "e5 to c4 is a valid L-shaped knight move."
+    },
+    "modified": {
+      "rule_change": "Knights move like bishops (diagonally any number of squares, not in L-shapes).",
+      "setup": "White knight on e5. Black bishop on c4.",
+      "question": "With the modified rule where knights move like bishops (diagonally, not in L-shapes), can the knight on e5 capture the bishop on c4 in one move?",
+      "answer": "no",
+      "explanation": "e5 to c4 is not a diagonal move."
+    }
+  }
+]
